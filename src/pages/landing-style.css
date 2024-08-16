@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.landing-general {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #111B47;
+    font-family: 'poppins', sans-serif;
+}
+
+.landing-page .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.landing-page .welcome-section h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #111B47;
+    margin-bottom: 20px;
+}
+
+.landing-page .welcome-section p {
+    font-size: 15px;
+    color: #4A4A4A;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.landing-page .welcome-section .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.landing-page .welcome-section .buttons a {
+    display: inline-block;
+    padding: 12px 30px;
+    text-align: center;
+    color: white;
+    background-color: #111B47;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.landing-page .welcome-section .buttons a:hover {
+    background-color: #ffffff;
+    color: #111B47;
+    border: 2px solid #111B47;
+}
+  
+.landing-page .sign-up-account p {
+    color: #4A4A4A;
+    font-size: 14px;
+}
+  
+.landing-page .create-one-link {
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight: 600;
+}
+  
+.landing-page .create-one-link:hover {
+    text-decoration: none;
+}
+
+.landing-page .footer {
+    margin-top: 20px;
+}
+
+.landing-page .footer p {
+    font-size: 14px;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .landing-page .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .landing-page .welcome-section h1 {
+        font-size: 36px;
+    }
+
+    .landing-page .welcome-section p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing-page .container {
+        max-width: 100%;
+    }
+
+    .landing-page .welcome-section h1 {
+        font-size: 28px;
+    }
+
+    .landing-page .welcome-section p {
+        font-size: 12px;
+    }
+
+    .landing-page .buttons a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

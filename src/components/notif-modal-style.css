@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    font-family: 'poppins', sans-serif;
+}
+
+.modal {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-out;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.modal.success {
+    background-color: #e6f4ea; 
+    border-left: 6px solid #4CAF50; 
+}
+
+.modal.error {
+    background-color: #ffffff; 
+    border-left: 6px solid #111B47; 
+}
+
+.modal p {
+    font-size: 14px;
+    margin: 0 0 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.button {
+    padding: 12px 24px;
+    background-color: #111B47;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

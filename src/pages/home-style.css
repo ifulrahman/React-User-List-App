@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto; 
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1; 
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #111B47;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-highlight {
+    width: 100%;
+}
+
+.profile {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile .description, .profile p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.table-container {
+    flex-grow: 1;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; 
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-btn {
+    padding: 8px 12px;
+    color: white;
+    background-color: #111B47;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s ease; 
+}
+
+.action-btn:hover {
+    background-color: #0056b3; 
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #111B47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.pagination button.next {
+    padding: 10px 35px;
+}
+
+.pagination button:hover {
+    background-color: #0056b3; 
+}
+
+.pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .search-container {
+        justify-content: flex-end;
+        margin-left: 20px;
+    }
+
+    .profile img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile h2 {
+        font-size: 16px;
+    }
+
+    .profile .description, .profile p {
+        font-size: 13px;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .action-btn {
+        font-size: 11px;
+    }
+
+    .pagination button {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .search-container {
+        justify-content: flex-end;
+        width: auto;
+    }
+
+    .profile img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile h2 {
+        font-size: 16px;
+    }
+
+    .profile .description, .profile p {
+        font-size: 13px;
+    }
+
+    .table th, .table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .action-btn {
+        font-size: 10px;
+    }
+
+    .pagination button {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .search-container {
+        justify-content: flex-end;
+        width: auto;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile h2 {
+        font-size: 14px;
+    }
+
+    .profile .description, .profile p {
+        font-size: 12px;
+    }
+
+    .table th, .table td {
+        padding: 6px;
+        font-size: 11px;
+    }
+
+    .action-btn {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .pagination button {
+        padding: 6px 8px;
+    }
+}
