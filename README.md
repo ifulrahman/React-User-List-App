@@ -35,3 +35,4 @@ Currently, two official plugins are available:
 <img width="450" src="Screenshot_1.png" alt="Screenshot 1"> <img width="450" src="Screenshot_2.png" alt="Screenshot 2"> 
 <img width="450" src="Screenshot_3.png" alt="Screenshot 3"> <img width="450" src="Screenshot_4.png" alt="Screenshot 4"> 
 <img width="450" src="Screenshot_5.png" alt="Screenshot 5"> <img width="450" src="Screenshot_6.png" alt="Screenshot 6"> 
+<img width="450" src="Screenshot_7.png" alt="Screenshot 7">
