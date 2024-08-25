@@ -30,6 +30,13 @@ Currently, two official plugins are available:
 ✔ Protected Routes <br>
 ✔ Responsive Design
 
+## Brief Steps
+- Download ZIP file dari repository projek ini
+- Buka folder projek dengan code editor (VSCode, sublime text, dll)
+- Buka terminal code editor
+- `npm i`
+- `npm run dev`
+
 ## Screenshots (Preview)
 
 <p align="center">
