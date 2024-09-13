@@ -36,6 +36,15 @@ Currently, two official plugins are available:
 - Buka terminal code editor
 - `npm i`
 - `npm run dev`
+- Setelah berhasil berjalan di localhost, masukkan email dan password untuk login dan register <br>
+  <b>Register : </b> <br>
+  `Email : eve.holt@reqres.in` <br>
+  `Password : pistol` <br>
+
+  <b>Login : </b> <br>
+  `Email : eve.holt@reqres.in` <br>
+  `Password : cityslicka` <br>
+- Silahkan cek dokumentasi API reqres untuk selengkapnya https://reqres.in/  
 
 ## Screenshots (Preview)
 
