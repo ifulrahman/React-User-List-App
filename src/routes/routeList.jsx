@@ -4,7 +4,7 @@ import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 import UserDetail from '../pages/UserDetail';
-import ProtectedRoute from './ProtectedRoute';
+import ProtectedRoute from './protectedRoute';
 import Navbar from '../components/Navbar';
 import Landing from '../pages/Landing';
 
